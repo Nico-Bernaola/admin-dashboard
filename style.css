@@ -1,4 +1,35 @@
-.left-sidebar {
-    display: inline-flex;
-    border: 1px solid #000
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.grid-container > * {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #1795D5;
+}
+
+.main {
+    grid-area: main;
+    background-color: #E2E8F0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: "sidebar header" 135px
+                   "sidebar main" auto /
+                   250px auto;
 }
