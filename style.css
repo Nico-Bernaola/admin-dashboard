@@ -20,13 +20,110 @@ body {
 }
 
 .header > .superior {
-    height: 50%;
-    border: 1px solid #000;
+    display: flex;
+    justify-content: space-around;
+    height: 40%;
+}
+
+.header > .superior > .search {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+.header > .superior > .search #magnify-link {
+    height: 18px;
+    width: 18px;
+}
+
+.header > .superior > .search .search-bar {
+    width: 500px;
+    height: 25px;
+    border: none;
+    background-color: #E1E2E2;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.header > .superior > .user-options {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 75px;
+    gap: 25px;
+}
+
+.header > .superior > .user-options .notify {
+    height: 18px;
+    width: 18px;
+    background-color: #ffffffe0;
+}
+
+.header > .superior > .user-options > .user-sup-img {
+    height: 38px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(images/user-img.jpg);
+    background-size: cover;
+}
+
+.header > .superior > .user-options h2 {
+    font-weight: 700;
 }
 
 .header > .inferior {
-    height: 50%;
-    border: 1px solid #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60%;
+}
+
+.header > .inferior .left {
+    display: inline-flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 30px;
+    gap: 20px;
+}
+
+.header > .inferior .left .greeting {
+    display: block;
+}
+
+.header > .inferior .left .greeting h6 {
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.header > .inferior .left .greeting h2 {
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.header > .inferior .left .user-inf-img {
+    height: 62px;
+    width: 64px;
+    border-radius: 50%;
+    background-image: url(images/user-img.jpg);
+    background-size: cover;
+}
+
+.header .inferior .right {
+    display: inline-flex;
+    margin-right: 75px;
+    gap: 25px;
+}
+
+.header .inferior .right button {
+    background-color: #1795D5;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+    color: #ffffffe0;
 }
 
 .sidebar {
@@ -148,7 +245,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template: "sidebar header" 175px
+    grid-template: "sidebar header" 145px
                    "sidebar main" auto /
                    280px auto;
 }
