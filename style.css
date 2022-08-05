@@ -15,14 +15,14 @@ body {
     grid-area: header;
     background-color: #ffffffe0;
     filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.144));
-    font-family: 'roboto', sans-serif;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header > .superior {
     display: flex;
     justify-content: space-around;
     height: 40%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header > .superior > .search {
@@ -84,7 +84,7 @@ body {
     display: inline-flex;
     align-items: center;
     margin-right: auto;
-    margin-left: 30px;
+    margin-left: 40px;
     gap: 20px;
 }
 
@@ -130,8 +130,52 @@ body {
     grid-area: sidebar;
     background-color: #1795D5;
     filter: drop-shadow(2.5px 0px 0px rgba(0, 0, 0, 0.123));
-    font-family: 'roboto', sans-serif;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.sidebar * {
+    text-decoration: none;
+}
+
+.sidebar .logo{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+.sidebar .options {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sidebar .settings {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.sidebar .options li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.sidebar .settings li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.sidebar .options a{
+    color: #fff;
+}
+
+.sidebar .settings a{
+    color: #fff;
 }
 
 .main {
@@ -140,8 +184,7 @@ body {
     grid-area: main;
     background-color: #E1E2E2;
     gap: 30px;
-    font-family: 'roboto', sans-serif;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -228,6 +271,7 @@ body {
     flex-flow: column;
     width: 300px;
     margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main > .article-container > .articles {
