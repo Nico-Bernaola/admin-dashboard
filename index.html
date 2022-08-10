@@ -6,129 +6,316 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Admin dashboard</title>
   </head>
   <body class="grid-container">
     <header class="header">
-        <div class="superior">
-          <div class="search">
-            <a href="#" id="magnify-link"><img src="images/magnify.svg" class="magnify"></a>
-              <label for="search"></label>
-              <input type="search" class="search-bar" placeholder="Search for trends" name="search">
-          </div>
-          <div class="user-options">
-            <a href="#"><img src="images/bell-ring.svg" class="notify"></a>
-            <div class="user-sup-img"></div>
-            <h2>User Name</h2>
+      <div class="superior">
+        <div class="search">
+          <a href="#" id="magnify-link"
+            ><img src="images/icons/magnify.svg" class="magnify"
+          /></a>
+          <label for="search"></label>
+          <input
+            type="search"
+            class="search-bar"
+            placeholder="Search for trends"
+            name="search"
+          />
+        </div>
+        <div class="user-options">
+          <a href="#"
+            ><img src="images/icons/bell-ring.svg" class="notify"
+          /></a>
+          <div class="user-sup-img"></div>
+          <h2>User Name</h2>
+        </div>
+      </div>
+      <div class="inferior">
+        <div class="left">
+          <div class="user-inf-img"></div>
+          <div class="greeting">
+            <h6>Hi there,</h6>
+            <h2>User name (@username)</h2>
           </div>
         </div>
-        <div class="inferior">
-          <div class="left">
-            <div class="user-inf-img"></div>
-            <div class="greeting">
-              <h6>Hi there,</h6>
-              <h2>User name (@username)</h2>
-            </div>
-          </div>
-          <div class="right">
-            <a href="#"><button>New</button></a>
-            <a href="#"><button>Update</button></a>
-            <a href="#"><button>Share</button></a>
-          </div>
+        <div class="right">
+          <a href="#"><button>New</button></a>
+          <a href="#"><button>Update</button></a>
+          <a href="#"><button>Share</button></a>
         </div>
+      </div>
     </header>
     <aside class="sidebar">
-          <div class="logo">
-              <h2>(icon) Dashboard</h2>
-          </div>
-          <div class="options">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Tasks</a></li>
-                <li><a href="#">Communities</a></li>
-              </ul>
-          </div>
-          <div class="settings">
-                <ul>
-                  <li><a href="#">Settings</a></li>
-                  <li><a href="#">Support</a></li>
-                  <li><a href="#">Privacy</a></li>
-                </ul>                
-          </div>
+      <div class="logo">
+        <div class="assets">
+          <img src="images/icons/fire.svg" alt="" />
+          <h2>Dashboard</h2>
+        </div>
+      </div>
+      <div class="options">
+        <ul>
+          <li>
+            <a href="#"><img src="images/icons/home.svg" alt="" /> Home</a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/icons/profile.svg" alt="" /> Profile</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/icons/messages.svg" alt="" /> Messages</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/icons/history.svg" alt="" /> History</a
+            >
+          </li>
+          <li>
+            <a href="#"><img src="images/icons/tasks.svg" alt="" /> Tasks</a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/icons/community.svg" alt="" srcset="" />
+              Communities</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="settings">
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="images/icons/settings.svg" alt="" /> Settings</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/icons/support.svg" alt="" /> Support</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/icons/privacy.svg" alt="" /> Privacy</a
+            >
+          </li>
+        </ul>
+      </div>
     </aside>
     <article class="main">
       <div class="item-container">
         <div class="items">
           <div class="left-item">
+            <h2 class="projects">Your Projects</h2>
             <div class="item" id="item">
               <div class="content">
                 <h2>Super cool project</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-                    provident voluptatum.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
+                  provident voluptatum.
                 </p>
+                <div class="content-icons">
+                  <div class="icon-wrapper">
+                    <a href="#"
+                      ><img src="images/icons/star.svg" alt="" id="star"
+                    /></a>
+                    <a href="#"
+                      ><img src="images/icons/eye.svg" alt="" id="eye"
+                    /></a>
+                    <a href="#"
+                      ><img src="images/icons/share.svg" alt="" id="share"
+                    /></a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="item2" id="item">
-                <div class="content">
-                    <h2>Super cool project</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-                        provident voluptatum.
-                    </p>
+              <div class="content">
+                <h2>Super cool project</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
+                  provident voluptatum.
+                </p>
+                <div class="content-icons">
+                  <div class="icon-wrapper">
+                    <a href="#"
+                      ><img src="images/icons/star.svg" alt="" id="star"
+                    /></a>
+                    <a href="#"
+                      ><img src="images/icons/eye.svg" alt="" id="eye"
+                    /></a>
+                    <a href="#"
+                      ><img src="images/icons/share.svg" alt="" id="share"
+                    /></a>
+                  </div>
                 </div>
+              </div>
             </div>
             <div class="item3" id="item">
-                <div class="content">
-                    <h2>Super cool project</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-                        provident voluptatum.
-                    </p>
+              <div class="content">
+                <h2>Super cool project</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
+                  provident voluptatum.
+                </p>
+                <div class="content-icons">
+                  <div class="icon-wrapper">
+                    <a href="#"
+                      ><img src="images/icons/star.svg" alt="" id="star"
+                    /></a>
+                    <a href="#"
+                      ><img src="images/icons/eye.svg" alt="" id="eye"
+                    /></a>
+                    <a href="#"
+                      ><img src="images/icons/share.svg" alt="" id="share"
+                    /></a>
+                  </div>
                 </div>
+              </div>
             </div>
           </div>
           <div class="right-item">
+            <h2 class="projects2"></h2>
             <div class="item4" id="item">
-                <div class="content">
-                    <h2>Super cool project</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-                        provident voluptatum.
-                    </p>
+              <div class="content">
+                <h2>Super cool project</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
+                  provident voluptatum.
+                </p>
+                <div class="content-icons">
+                  <div class="icon-wrapper">
+                    <a href="#"
+                      ><img src="images/icons/star.svg" alt="" id="star"
+                    /></a>
+                    <a href="#"
+                      ><img src="images/icons/eye.svg" alt="" id="eye"
+                    /></a>
+                    <a href="#"
+                      ><img src="images/icons/share.svg" alt="" id="share"
+                    /></a>
+                  </div>
                 </div>
+              </div>
             </div>
             <div class="item5" id="item">
-                <div class="content">
-                    <h2>Super cool project</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-                        provident voluptatum.
-                    </p>
+              <div class="content">
+                <h2>Super cool project</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
+                  provident voluptatum.
+                </p>
+                <div class="content-icons">
+                  <div class="icon-wrapper">
+                    <a href="#"
+                      ><img src="images/icons/star.svg" alt="" id="star"
+                    /></a>
+                    <a href="#"
+                      ><img src="images/icons/eye.svg" alt="" id="eye"
+                    /></a>
+                    <a href="#"
+                      ><img src="images/icons/share.svg" alt="" id="share"
+                    /></a>
+                  </div>
                 </div>
+              </div>
             </div>
             <div class="item6" id="item">
-                <div class="content">
-                    <h2>Super cool project</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-                        provident voluptatum.
-                    </p>
+              <div class="content">
+                <h2>Super cool project</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
+                  provident voluptatum.
+                </p>
+                <div class="content-icons">
+                  <div class="icon-wrapper">
+                    <a href="#"
+                      ><img src="images/icons/star.svg" alt="" id="star"
+                    /></a>
+                    <a href="#"
+                      ><img src="images/icons/eye.svg" alt="" id="eye"
+                    /></a>
+                    <a href="#"
+                      ><img src="images/icons/share.svg" alt="" id="share"
+                    /></a>
+                  </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="article-container">
         <div class="articles">
-          <div class="article1" id="article">Article</div>
-          <div class="article2" id="article">Article</div>
+          <h2 class="announcements">Announcements</h2>
+          <div class="article1" id="article">
+            <div class="article-content">
+              <h2>Site Maintenance</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+                doloribus aliquid nostrum sed tempore enim!
+              </p>
+            </div>
+            <hr>
+            <div class="article-content">
+              <h2>Community Share Day</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                pariatur sapiente possimus laudantium iste suscipit modi impedit
+                aliquam quae reprehenderit.
+              </p>
+            </div>
+            <hr>
+            <div class="article-content2">
+              <h2>Updated Privacy Policy</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  magnam asperiores totam recusandae! Quia explicabo in dolore
+                  veritatis quibusdam dolor, aliquam molestias consequatur
+                  perspiciatis!</p>
+            </div>
+          </div>
+          <div class="article2" id="article">
+            <div class="div">
+              <div class="profile-img" id="john"></div>
+              <div class="user-data">
+                <h2>@johnLennon</h2>
+                  <p>World Peace Maker</p>
+              </div>
+            </div>
+            <div class="div">
+              <div class="profile-img" id="paul"></div>
+                <div class="user-data">
+                  <h2>@McCartney_Paul</h2>
+                    <p>Metronome app</p>
+                </div>
+            </div>
+            <div class="div">
+              <div class="profile-img" id="george"></div>
+              <div class="user-data">
+                <h2>@TheGeorgeHarrison</h2>
+                  <p>Guitar Tears Cleaner</p>
+              </div>
+            </div>
+            <div class="div">
+              <div class="profile-img" id="ringo"></div>
+              <div class="user-data">
+                <h2>@RichardStarkeyRingo</h2>
+                  <p>FaceApp</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </article>
